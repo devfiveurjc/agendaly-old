@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@drawable/pexels_mark_mccammon_1934846">
+    <EditText
+            android:layout_width="377dp"
+            android:layout_height="60dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName3"
+            android:theme="@style/Theme.AgendaApp"
+            android:hint="@string/title" android:background="@color/material_on_surface_emphasis_medium"
+            android:textColor="@color/white" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="41dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="18dp"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent" android:textSize="20sp"/>
+    <EditText
+            android:layout_width="378dp"
+            android:layout_height="179dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName4"
+            android:hint="@string/description"
+            android:background="@color/material_on_surface_emphasis_medium" android:theme="@style/Theme.AgendaApp"
+            tools:inputType="textMultiLine" android:textColor="@color/white" android:gravity="start|top"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginTop="26dp" app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+            android:layout_marginEnd="17dp" app:layout_constraintEnd_toEndOf="parent" android:textSize="20sp"/>
+    <TextView
+            android:text="Fecha"
+            android:layout_width="132dp"
+            android:layout_height="62dp" android:id="@+id/textView"
+            android:textSize="20sp"
+            android:background="@color/material_on_surface_emphasis_medium" android:layout_marginTop="41dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="18dp"
+            android:layout_marginEnd="261dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="Hora"
+            android:layout_width="134dp"
+            android:layout_height="62dp" android:id="@+id/textView2"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginEnd="261dp"
+            app:layout_constraintEnd_toEndOf="parent" android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="1.0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
