@@ -5,21 +5,29 @@
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
                                                    tools:context=".MainActivity" android:id="@+id/button1"
-                                                   android:background="@drawable/pexels_mark_mccammon_1934846">
+                                                   android:background="@drawable/pexels_mark_mccammon_1934846"
+>
     <ImageView
             android:layout_width="0dp"
             android:layout_height="119dp" app:srcCompat="@drawable/logo_transparent" android:id="@+id/logo_empresa"
             android:layout_margin="115dp"
             app:layout_constraintTop_toBottomOf="@+id/button2" android:layout_marginEnd="155dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="244dp"
+            android:layout_marginTop="160dp"
             android:layout_marginStart="155dp"/>
     <Button
-            android:text="Ver calendario"
-            android:layout_width="369dp"
-            android:layout_height="55dp" android:id="@+id/button2"
+            android:text="AGENDALY"
+            android:layout_width="221dp"
+            android:layout_height="98dp"
+            android:id="@+id/button2"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="320dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="11dp" android:layout_marginEnd="11dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_marginTop="296dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="115dp"
+            app:layout_constraintBottom_toTopOf="@+id/logo_empresa"
+            app:iconPadding="18dp"
+            android:textSize="20sp" android:onClick="openApp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
